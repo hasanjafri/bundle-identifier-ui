@@ -1,0 +1,33 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="bundle_id"> Bundle_ID </label>
+      <input type="text" [(ngModel)]="list.bundle_id" name="bundle_id" required>
+    </div>
+    <button type="submit"> Submit </button>
+  </form>
+
+  <h2>Result:</h2>
+  <p>{{message}}</p>
+
+  <br/>
+
+  <table id="table" class="table">
+    <thead>
+      <tr>
+        <th> bundle_id </th>
+        <th> build_number </th>
+        <th> date_created </th>
+        <th> last_updated </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{resp.bundle_id}}</td>
+        <td>{{resp.build_number}}</td>
+        <td>{{resp.created_at}}</td>
+        <td>{{resp.last_updated}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="bundle_id"> Bundle_ID </label>
+      <input type="text" [(ngModel)]="newBundleId.bundle_id" name="bundle_id" required>
+    </div>
+    <div>
+      <label for="build_number"> Build_Number </label>
+      <input type="text" [(ngModel)]="newBundleId.build_number" name="build_number" required>
+    </div>
+    <button type="submit"> Submit </button>
+  </form>
+
+  <h2>Status:</h2>
+  <p>{{resp}}</p>
+</div>

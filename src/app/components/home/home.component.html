@@ -1,0 +1,22 @@
+<h2> Bundle Identifier Manager </h2>
+
+<table id="table">
+  <thead>
+    <tr>
+      <th> bundle_id </th>
+      <th> build_number </th>
+      <th> date_created </th>
+      <th> last_updated <th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let list of lists">
+      <td>{{list.bundle_id}}</td>
+      <td>{{list.build_number}}</td>
+      <td>{{list.created_at}}</td>
+      <td>{{list.last_updated}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
